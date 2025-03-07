@@ -4,66 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <style>
-        header {
-            text-align: center;
-            background-color:blanchedalmond;
-            padding: 5px;
-        }
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin: 70px;
-            background-color:beige
-        }
-    </style>
-    <header>
-        <h1>Welcome to Suci's Portfolio</h1>
-        <p>Hi! I'm Suci, a software engineer student.</p>
+<body class="container m-auto mt-6 bg-slate-700 text-slate-300">
+   <header>
+        <div>
+            <h1 class="text-4xl">Welcome,</h1>
+            <h4>to Suci's Portfolio</h4>
+            <div class="container mx-auto flex justify-end">
+                <ul class="flex gap-4">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li> 
+                </ul>
+            </div>
+        </div>
+        
+        <hr>
     </header>
     <br>
+    <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a store manager that passionate about learn new thing, one of them which study at RevoU as a software engineer. 
-            <br> I'm constantly learning and improving my skills.</p>      
+        <h2 class="text-xl font-semibold">About Me</h2>
+        <p>I'm a soon to be a full-stack engineer that study at RevoU as a software engineer. I'm a passionate about tech and interest to learn more about it. 
+            As a Software Engineering student, I am constantly exploring new technologies and learning how to apply them to real-world problems. I have a deep interest in web development, especially in building dynamic, responsive, and user-friendly applications using modern framework.</p>
     </section>
     <br>
-    <section id="projects">
-        <h2>My Projects</h2>
+    <div>
+    <section id="projects mb-16">
+        <h2 class="text-xl font-semibold">My Projects</h2>
         <div class="project">
-            <h3>Project 1: Portfolio Blog</h3>
-            <p>Built a simple my own portfolio blog with HTML and CSS.</p>
+            <h3>Project 1: Personal Website</h3>
+            <p class="mb-8">This project is a personal portfolio website where I showcase my work and project in the future.</p>
         </div>
     </section>
-    <br>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML (on going)</li>
-            <li>CSS (on going)</li>
-            <li>JavaScript (on going)</li>
-            <li>React (on going)</li>
-            <li>Node.js (on going)</li>
-        </ul>
-    </section>
-    <br>
+    </div>
     <section id="contact">
-        <h2>Contact Me</h2>
+        <h2 class="text-xl font-semibold mb-4">Contact Me</h2>
         <p>Feel free to contact me to discuss about your project.</p>
-        <form action="/action_page.php">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br><br>
-            <input type="submit" value="Submit">
+        <form action="#" method="POST">
+            <!-- Name Field -->
+            <div class="mb-4">
+              <label for="name" class="block text-sm font-medium text-slate-700">Name</label>
+                <span class="...">Name</span>
+              <p><input type="text" id="name" name="name" class="w-xs px-4 py-2 mt-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></p>
+            </div>
+      
+            <!-- Email Field -->
+            <div class="mb-4">
+              <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+                <span class="...">Email</span>
+              <p><input type="email" id="email" name="email" class="w-xs px-4 py-2 mt-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></p>
+            </div>
+      
+            <!-- Message Field -->
+            <div class="mb-4">
+              <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
+                <span class="...">Message</span>
+              <p><textarea id="message" name="message" rows="4" class="w-xs-4 py-2 mt-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea></p>
+            </div>
+      
+            <!-- Submit Button -->
+            <div class="flex justify-left">
+              <button type="submit" class="px-6 py-2 bg-slate-900 text-white font-semibold rounded-md hover:bg-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500">Submit</button>
+            </div>
           </form>
     </section>
     <hr>
     <br>
     <footer>
-        <p>&copy;2025 AmanahSuci, All Right Reserved</p>
+        <p>&copy;2025 AmanahSuci, All Right Reserved.</p>
     </footer>
 </body>
 </html>
