@@ -7,54 +7,61 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="container m-auto mt-6 bg-slate-700 text-slate-300">
+<body class="container min-h-screen ml-24 bg-slate-100">
    <header>
         <div>
             <h1 class="text-4xl">Welcome,</h1>
             <h4>to Suci's Portfolio</h4>
-            <div class="container mx-auto flex justify-end">
+            <nav class="hidden lg:block w-full lg:w-auto mt-4 lg:mt-0">
+              <div class="container mx-auto flex justify-end">
                 <ul class="flex gap-4">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li> 
                 </ul>
-            </div>
+              </div>
+            </nav>
         </div>
-        
         <hr>
     </header>
     <br>
     <!-- About Section -->
-    <section id="about">
-        <h2 class="text-xl font-semibold">About Me</h2>
-        <p>I'm a soon to be a full-stack engineer that study at RevoU as a software engineer. I'm a passionate about tech and interest to learn more about it. 
+    <section id="about" class="flex items-center justify-between">
+      <img src="image/a-paint.jpeg" class="w-64 h-64 border-solid"/>
+    <br>
+    <div class="flex justify-between">
+      <h1 class="float-right text-2xl font-semibold">About Me</i></a>
+         <p class="font-sm">I'm a soon to be a full-stack engineer that study at RevoU as a software engineer. I'm a passionate about tech and interest to learn more about it. 
             As a Software Engineering student, I am constantly exploring new technologies and learning how to apply them to real-world problems. I have a deep interest in web development, especially in building dynamic, responsive, and user-friendly applications using modern framework.</p>
+    </div>
     </section>
     <br>
     <div>
     <section id="projects mb-16">
-        <h2 class="text-xl font-semibold">My Projects</h2>
-        <div class="project">
+        <h2 class="text-2xl font-semibold">Projects</h2></a>
+        <!-- <div class="project">
             <h3>Project 1: Personal Website</h3>
             <p class="mb-8">This project is a personal portfolio website where I showcase my work and project in the future.</p>
-        </div>
+        </div> -->
     </section>
+    <br>
     </div>
     <section id="contact">
-        <h2 class="text-xl font-semibold mb-4">Contact Me</h2>
+      <h2 class="text-xl font-semibold mb-4">Contact Me</h2>
+        <br>
         <p>Feel free to contact me to discuss about your project.</p>
         <form action="#" method="POST">
             <!-- Name Field -->
             <div class="mb-4">
-              <label for="name" class="block text-sm font-medium text-slate-700">Name</label>
-                <span class="...">Name</span>
+              <!-- <label for="name" class="block text-xs text-slate-700">Name</label> -->
+                <span class="..."><i class="font-xs"></i> Name</span>
               <p><input type="text" id="name" name="name" class="w-xs px-4 py-2 mt-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></p>
             </div>
       
             <!-- Email Field -->
             <div class="mb-4">
-              <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
-                <span class="...">Email</span>
+              <!-- <label for="email" class="block text-sm font-medium text-slate-700">Email</label> -->
+               <span class="...">Email</span>
               <p><input type="email" id="email" name="email" class="w-xs px-4 py-2 mt-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></p>
             </div>
       
@@ -70,11 +77,11 @@
               <button type="submit" class="px-6 py-2 bg-slate-900 text-white font-semibold rounded-md hover:bg-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500">Submit</button>
             </div>
           </form>
-    </section>
+    </section> 
     <hr>
     <br>
     <footer>
-        <p>&copy;2025 AmanahSuci, All Right Reserved.</p>
+        <p>&copy;2025 AmanahSuci.</p>
     </footer>
 </body>
 </html>
