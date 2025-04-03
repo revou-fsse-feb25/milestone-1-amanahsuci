@@ -3,15 +3,15 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    width: 80%;                /* Membuat lebar container menjadi 80% dari lebar layar */
-    margin: 0 auto;            /* Menyusun container ke tengah secara horizontal */
+    width: 80%;                
+    margin: 0 auto;            
     padding: 20px;
 }
 
 .main {
-    height: 100%;  /* Memastikan tinggi halaman mencakup seluruh layar */
-    margin: 0;     /* Menghapus margin default */
-    display: flex; /* Mengaktifkan flexbox */
+    height: 100%;  
+    margin: 0;     
+    display: flex; 
     justify-content: center; 
     align-items: center;
     height: 90vh;
