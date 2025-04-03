@@ -1,0 +1,208 @@
+body {
+    background-image: url(https://img.freepik.com/free-vector/dark-minimal-hexagons-background_79603-1455.jpg?t=st=1743654828~exp=1743658428~hmac=177f7485f544ca1f767172b21557b41d01f4c38b81883a93e05d6e98b0fc84fd&w=2000;);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 80%;                /* Membuat lebar container menjadi 80% dari lebar layar */
+    margin: 0 auto;            /* Menyusun container ke tengah secara horizontal */
+    padding: 20px;
+}
+
+.main {
+    height: 100%;  /* Memastikan tinggi halaman mencakup seluruh layar */
+    margin: 0;     /* Menghapus margin default */
+    display: flex; /* Mengaktifkan flexbox */
+    justify-content: center; 
+    align-items: center;
+    height: 90vh;
+}
+
+.welcome {
+    justify-items: center;
+    align-items: center;
+}
+
+.Hi {
+    color: #F2EFE7;
+    font-family: rival-sans, sans-serif;
+    font-size: 40px;
+}
+
+.student {
+    color: #F2EFE7;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.button {
+    list-style-type: none;
+    display: flex;
+    justify-items: center;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+li a {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;    
+    color: #F2EFE7;          
+    padding: 5px 10px; 
+    border: 1px solid #FDFAF6;
+    border-radius: 7px; 
+}
+
+li a:hover {
+    box-shadow: 0 0 8px 3px rgba(221, 225, 230, 0.7);
+}
+
+#about {
+    margin-top: 40px;
+    color: #F2EFE7;
+}
+
+.me {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding: 0px 0px 0px 26px;
+}
+
+.paragraph1 {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.paragraph2 {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+#project {
+    margin-top: 60px;
+    color: #F2EFE7;
+}
+
+.projects {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    padding: 0px 0px 0px 26px;
+}
+
+.paragraph3 {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+#box-container {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box1 {
+    width: 300px;            
+    height: 200px; 
+    position: relative;           
+    border: 5px solid #FDFAF6;
+    border-radius: 5px;       
+    display: flex;           
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;  
+    margin-top: 10px;   
+    padding: 30px;
+}
+
+.box2 {
+    width: 300px;            
+    height: 200px; 
+    position: relative;           
+    border: 5px solid #FDFAF6;
+    border-radius: 5px;       
+    display: flex;           
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;  
+    margin-top: 10px;   
+    padding: 30px;
+}
+
+.box3 {
+    width: 300px;            
+    height: 200px; 
+    position: relative;           
+    border: 5px solid #FDFAF6;
+    border-radius: 5px;       
+    display: flex;           
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;  
+    margin-top: 10px;   
+    padding: 30px;
+}
+
+.soon {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+img {
+    width: 100%;                  
+    height: 100%;                 
+    object-fit: cover; 
+}
+
+.box1:hover {
+    box-shadow: 0 0 8px 3px rgba(221, 225, 230, 0.7);
+} 
+
+.box2:hover {
+    box-shadow: 0 0 8px 3px rgba(221, 225, 230, 0.7);
+}
+
+.box3:hover {
+    box-shadow: 0 0 8px 3px rgba(221, 225, 230, 0.7);
+}
+
+#contact {
+    margin-top: 60px;
+    color: #F2EFE7;
+}
+
+.contact {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    padding: 0px 0px 0px 26px;
+}
+
+ß

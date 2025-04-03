@@ -5,15 +5,25 @@ body {
 .navbar {
     width: 1100px;
     margin: auto;
+    float: right;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid #735557;
 }
 
 .menu {
-    float: right;
+    justify-content: right;
 }
 
 ul {
     width: 100%;
     margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #E3D2C3;
 }
 
 li {
@@ -22,5 +32,8 @@ li {
 }
 
 li a {
-    display: flex;
+    color: #8C6A5D;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px 16px 0px 16px;
 }
