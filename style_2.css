@@ -34,6 +34,7 @@ body {
     font-weight: 700;
     font-style: normal;
     font-size: 20px;
+    margin-bottom: 40px;
 }
 
 .button {
@@ -76,16 +77,7 @@ li a:hover {
     padding: 0px 0px 0px 26px;
 }
 
-.paragraph1 {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-top: 20px;
-    letter-spacing: 1px;
-}
-
-.paragraph2 {
+.paragraph1, .paragraph2 {
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -123,35 +115,7 @@ li a:hover {
     justify-content: center;
 }
 
-.box1 {
-    width: 300px;            
-    height: 200px; 
-    position: relative;           
-    border: 5px solid #FDFAF6;
-    border-radius: 5px;       
-    display: flex;           
-    flex-direction: column;  
-    justify-content: center;  
-    align-items: center;  
-    margin-top: 10px;   
-    padding: 30px;
-}
-
-.box2 {
-    width: 300px;            
-    height: 200px; 
-    position: relative;           
-    border: 5px solid #FDFAF6;
-    border-radius: 5px;       
-    display: flex;           
-    flex-direction: column;  
-    justify-content: center;  
-    align-items: center;  
-    margin-top: 10px;   
-    padding: 30px;
-}
-
-.box3 {
+.box1, .box2, .box3 {
     width: 300px;            
     height: 200px; 
     position: relative;           
@@ -180,21 +144,24 @@ img {
     object-fit: cover; 
 }
 
-.box1:hover {
+.box1:hover, .box2:hover, .box3:hover {
     box-shadow: 0 0 8px 3px rgba(221, 225, 230, 0.7);
 } 
 
-.box2:hover {
-    box-shadow: 0 0 8px 3px rgba(221, 225, 230, 0.7);
-}
-
-.box3:hover {
-    box-shadow: 0 0 8px 3px rgba(221, 225, 230, 0.7);
-}
-
 #contact {
-    margin-top: 60px;
-    color: #F2EFE7;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: auto;
+}
+
+.left-side {
+    float: left;
+    flex: 1;
+    padding: 10px;
 }
 
 .contact {
@@ -205,4 +172,75 @@ img {
     padding: 0px 0px 0px 26px;
 }
 
-ß
+#name, #email, #message {
+    width: 30%;
+    height: 30px;
+    background-color: rgba(39, 46, 52, 0.337);
+    padding: 6px;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+#name:hover, #email:hover, #message:hover {
+    box-shadow: 0 0 8px 3px rgba(221, 225, 230, 0.7);
+}
+
+.submit {    
+    width: 10%;
+    color: #F2EFE7;
+    background-color: rgba(39, 46, 52, 0.337);          
+    padding: 10px; 
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+}
+
+.submit:hover {
+    color: #686D76;
+    box-shadow: 0 0 8px 3px rgba(221, 225, 230, 0.7);
+}
+
+/* .line {
+    place-items: center;
+    width: 1px;
+    background-color: #686D76;
+    height: 100%;
+} */
+
+.right-side {
+    float: right;
+    flex: 1;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+.myEmail {
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+.Email {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.gmail {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.logo {
+    margin-top: 40px;
+}
+
+i {
+    font-size: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: rival-sans, sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
