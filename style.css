@@ -9,7 +9,6 @@ body {
 }
 
 .main {
-    /* height: 100%;   */
     margin: 0;     
     display: flex; 
     justify-content: center; 
@@ -41,14 +40,14 @@ body {
     list-style-type: none;
     display: flex;
     justify-items: center;
+    justify-content: space-between;
     font-family: "PT Sans Narrow", sans-serif;
     font-weight: 500;
     font-size: 16px;
+    column-gap: 10px;
 }
 
 li a {
-    margin-left: 50px;
-    margin-right: 50px;
     text-decoration: none;
 }
 
@@ -69,7 +68,7 @@ li a:hover {
     color: #F2EFE7;
 }
 
-.me {
+h2 {
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 28px;
     font-weight: 500;
@@ -89,14 +88,6 @@ li a:hover {
 #project {
     margin-top: 60px;
     color: #F2EFE7;
-}
-
-.projects {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 28px;
-    font-weight: 500;
-    letter-spacing: 5px;
-    padding: 0px 0px 0px 26px;
 }
 
 .paragraph3 {
@@ -148,10 +139,6 @@ img {
     box-shadow: 0 0 8px 3px rgba(221, 225, 230, 0.7);
 } 
 
-#contact1 {
-    display: flex;
-}
-
 .container {
     display: flex;
     width: 80%;
@@ -161,19 +148,11 @@ img {
 .left-side {
     float: left;
     flex: 1;
-    padding: 10px;
-}
-
-.contact {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 28px;
-    font-weight: 500;
-    letter-spacing: 5px;
-    padding: 0px 0px 0px 26px;
+    padding: 5px;
 }
 
 #name, #email, #message {
-    width: 30%;
+    width: 200px;
     height: 30px;
     background-color: rgba(39, 46, 52, 0.337);
     padding: 6px;
@@ -187,7 +166,7 @@ img {
 }
 
 .submit {    
-    width: 10%;
+    
     color: #F2EFE7;
     background-color: rgba(39, 46, 52, 0.337);          
     padding: 10px; 
@@ -200,8 +179,9 @@ img {
     box-shadow: 0 0 8px 3px rgba(221, 225, 230, 0.7);
 }
 
-#contact2 {
-    justify-content: right;
+.Contact {
+    display: flex;
+    justify-content: space-between;
 }
 
 .line {
@@ -212,13 +192,6 @@ img {
     width: 1px;
     background-color: #686D76;
     height: 100%;
-}
-
-.right-side {
-    float: right;
-    flex: 1;
-    padding: 10px;
-    margin-top: 60px;
 }
 
 .myEmail {
@@ -250,4 +223,17 @@ p {
     font-family: rival-sans, sans-serif;
     font-weight: 400;
     letter-spacing: 2px;
+}
+
+@media screen and (max-width: 450px) {
+    .button {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #box-container {
+        flex-direction: column;
+    }
 }
